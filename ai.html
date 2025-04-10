@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISN AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RISN AI Assistant</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form id="aiForm">
+            <input type="text" id="productName" placeholder="Product Name" required>
+            <input type="text" id="collectionName" placeholder="Collection Name" required>
+            <textarea id="description" placeholder="Description" required></textarea>
+            <input type="text" id="theme" placeholder="Campaign Theme" required>
+            <div class="button-container">
+                <button type="button" onclick="generateAd()">Generate Ad</button>
+                <button type="button" onclick="createVisual()">Create Visual</button>
+                <button type="button" onclick="suggestHashtags()">Suggest Hashtags</button>
+                <button type="button" onclick="schedulePost()">Schedule Post</button>
+            </div>
+        </form>
+        <div id="output" class="output"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RISN Brand. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
